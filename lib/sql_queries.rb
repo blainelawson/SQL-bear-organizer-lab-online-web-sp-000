@@ -23,7 +23,7 @@ def selects_most_prominent_color_and_returns_with_count
           COUNT(color) AS color_counts
       FROM bears
       GROUP BY color
-      ORDER BY color_counts
+      ORDER BY color_counts DESC
       LIMIT 1;"
 end
 
